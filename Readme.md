@@ -26,18 +26,18 @@
 - 문이 열리는 소리
 
 # 구현 기능
-A. 회전
+- [x] A. 회전
 - 양 옆의 화살표 버튼을 클릭하여 Scene을 변경
 - [Changing Scenes](https://www.youtube.com/watch?v=wNl--exin90&list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu&index=30)
 
-B. 인벤토리
+- [ ] B. 인벤토리
 - 4개의 이미지를 선택할 수 있는 상호작용 인벤토리.
  
-C. 금고 터치이벤트   
+- [ ] C. 금고 터치이벤트   
 - 금고는 세모와 네모 블록을 합체할 수 있다.
 - [다이얼로그](https://www.youtube.com/watch?v=1NCvpZDtTMI&list=PL4vbr3u7UKWp0iM1WIfRjCDTI03u43Zfu&index=12)
 
-D. 아이패드 터치이벤트
+- [ ] D. 아이패드 터치이벤트
 - 아이패드는 숫자를 입력할 수 있다.
 - 숫자 배드와 입력 버튼으로 구성됨
 - 
