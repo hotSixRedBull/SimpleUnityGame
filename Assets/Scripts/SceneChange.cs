@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+    public string myScene;
     public string sceneTarget;
     private void Update() {
-        if(Input.GetMouseButtonDown(0)) {
-            SceneManager.LoadScene(sceneTarget);
-        }
+
+    }
+    public void move() {
+        SceneManager.LoadScene(sceneTarget);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneTarget));
+        //SceneManager.UnloadSceneAsync(myScene);
     }
 }
