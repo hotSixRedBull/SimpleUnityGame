@@ -25,6 +25,7 @@ public class touch_Inven_for_safe : MonoBehaviour
             targetImage.sprite = toImage1; //TestImage에 SourceImage를 TestSprite에 존제하는 이미지로 바꾸어줍니다
         } else if(Inventory.spent >= 2) {
             targetImage.sprite = toImage2;
+            //해상도올려
         }
     }
 

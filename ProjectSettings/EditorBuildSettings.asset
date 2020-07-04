@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/flashlight.unity
     guid: 4af8c204e7abbd8419157ba477ab3699
+  - enabled: 1
+    path: Assets/Scenes/window.unity
+    guid: 4d0aa3bf0d259c54f831bcbfdcbdc527
   m_configObjects: {}
