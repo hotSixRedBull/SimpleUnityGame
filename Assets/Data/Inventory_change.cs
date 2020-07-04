@@ -1,0 +1,109 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI; //Text, Image 등의UI관련 변수 등을 사용할수 있게됩니다
+
+public class Inventory_change : MonoBehaviour
+{
+    public string myName;
+    public Image slot1; //기존에 존제하는 이미지
+    public Image slot2; //기존에 존제하는 이미지
+    public Sprite empty; //바뀌어질 이미지
+    public Sprite square; //바뀌어질 이미지
+    public Sprite flashlight; //바뀌어질 이미지
+    public Sprite ipad; //바뀌어질 이미지
+
+    public void touch() {
+        switch(Inventory.status) {
+            case 1:
+                Inventory.status = 0;
+                slot1.sprite = empty;
+                slot2.sprite = empty;
+                break;
+            case 2:
+                Inventory.status = 1;
+                slot1.sprite = empty;
+                slot2.sprite = empty;
+                break;
+            case 3:
+                Inventory.status = 1;
+                slot1.sprite = square;
+                slot2.sprite = empty;
+                break;
+            case 4:
+                slot1.sprite = empty;
+                slot2.sprite = empty;
+                break;
+            case 5:
+                Inventory.status = 3;
+                slot1.sprite = empty;
+                slot2.sprite = empty;
+                break;
+            case 6:
+                slot1.sprite = ipad;
+                slot2.sprite = empty;
+                break;
+            case 7:
+                if(myName == "slot1") {
+                    Inventory.status = 3;
+                    slot1.sprite = empty;
+                    slot2.sprite = empty;
+                }
+                if(myName == "slot2") {
+                    slot1.sprite = flashlight;
+                    slot2.sprite = ipad;
+                }
+                break;
+        }
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        /*
+            0: 빈 상태
+            1: 소파 녹색 주음, 의자 녹색 없음
+            2: 의자 녹색 주음, 소파 녹색 없음
+            3: 녹색 2개 주음
+            4: 빈 상태
+            5: 손전등 주음, 아이패드 없음
+            6: 아이패드 주음, 손전등 없음
+            7: 아이패드, 손전등 주음
+        */
+        switch(Inventory.status) {
+            case 1:
+                slot1.sprite = square;
+                slot2.sprite = empty;
+                break;
+            case 2:
+                slot1.sprite = square;
+                slot2.sprite = empty;
+                break;
+            case 3:
+                slot1.sprite = square;
+                slot2.sprite = square;
+                break;
+            case 4:
+                slot1.sprite = empty;
+                slot2.sprite = empty;
+                break;
+            case 5:
+                slot1.sprite = flashlight;
+                slot2.sprite = empty;
+                break;
+            case 6:
+                slot1.sprite = ipad;
+                slot2.sprite = empty;
+                break;
+            case 7:
+                slot1.sprite = flashlight;
+                slot2.sprite = ipad;
+                break;
+        }
+    }
+}
