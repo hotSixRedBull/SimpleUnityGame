@@ -71,7 +71,7 @@
     - 인벤에서 세모, 네모 블럭을 하나씩 금고에 합체하는 것
 
 
-#그림설명
+# 그림설명
 [resol1]
  - resol1_main: 첫 화면		/ resol1_side: 첫 화면의 측면
  - resol1_sofa_first: 네모 줍기 전 소파	/ resol1_sofa_later: 네모 주은 뒤 소파
