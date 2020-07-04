@@ -83,10 +83,10 @@
  - resol2_gumgo_full: 이 장면부터 레벨이 시작함
  - resol2_gumgo_ipad: 손전등 줍고(이때 인벤에 추가해야 함)
  - resol2_gumgo_empty: 아이패드까지 다 주워서 빈 금고일 때
- - resol2_main: 정면샷		/ resol2_side: 첫 화면의 측면(아직 못함)
+ - resol2_main: 정면샷		/ resol2_side: 측면
  - resol2_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
 [resol3]
- - resol3_main: 정면샷		/ resol3_side: 첫 화면의 측면(아직 못함)
+ - resol3_main: 정면샷		/ resol3_side: 측면
  - resol3_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
 [resol2~3]
  - flash_off: 인벤에서 후레시 클릭 시
@@ -97,6 +97,6 @@
  - ipad_open_fisrt: 앱 클릭하면 이 화면 나오고 잠깐 뒤 다음 화면(ipad_open_last)으로 넘어감
 [resol4: 탈출 직전]
  - ipad_app_last: 이 장면부터 레벨이 시작함
- - resol4_main: 여기서 문으로 탈출!	// 측면 안만듦
+ - resol4_main: 여기서 문으로 탈출!	// 측면: resol4_side
 
 #아이패드 전체 추가(끝!) --> 14:20
