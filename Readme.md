@@ -81,22 +81,25 @@
  - resol1_square: 네모인데 혹시 필요할까봐
 [resol2]
  - resol2_gumgo_full: 이 장면부터 레벨이 시작함
- - resol2_gumgo_ipad: 손전등 줍고(이때 인벤에 추가해야 함)
- - resol2_gumgo_empty: 아이패드까지 다 주워서 빈 금고일 때
+ - resol2_gumgo_ipad: 손전등 줍고 --> resol2_flash_inven을 인벤에 추가
+ - resol2_gumgo_empty: 아이패드까지 다 주워서 빈 금고일 때  --> resol2_ipad_gotwagil을 인벤에 추가
  - resol2_main: 정면샷		/ resol2_side: 측면
  - resol2_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
+ - resol2_flash_off: 인벤에서 손전등 클릭 시(off)
+ - resol2_flash_on: 인벤에서 손전등 클릭하고 확대된 손전등 클릭 시(on)
+ - resol2_flash_on_inven: 불켜진 손전등 인벤토리 추가
+ - resol2_window_first: 창문 확대
+ - resol2_window_last: 창문에 불켜진 손전등 비출 때	// 마지막 장면
 [resol3]
  - resol3_main: 정면샷		/ resol3_side: 측면
  - resol3_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
-[resol2~3]
- - flash_off: 인벤에서 후레시 클릭 시
- - flash_on: 인벤에서 후레시 클릭+후레시 기능 키면(클릭) --> 이대로 인벤에 저장부탁
- - ipad_pw0: 인벤에서 아이패드 클릭 시 이 화면 나옴
- - ipad_pw1: 비번 하나 누를 때 ~~~ 4까지 감
- - ipad_app_first: 비번 다 풀면 이 화면 나옴 --> 앱 클릭하면
- - ipad_open_fisrt: 앱 클릭하면 이 화면 나오고 잠깐 뒤 다음 화면(ipad_open_last)으로 넘어감
+ - resol3_ipad_pw0: 인벤에서 아이패드 클릭 시 이 화면 나옴
+ - resol3_ipad_pw1: 비번 하나 누를 때 ~~~ 4까지 감	// 비번은 2020
+ - resol3_ipad_app: 비번 다 풀면 이 화면 나옴 --> 앱 클릭하면
+ - resol3_ipad_open: 앱 클릭하면 이 화면 나오고 잠깐 뒤 렙업!!
 [resol4: 탈출 직전]
- - ipad_app_last: 이 장면부터 레벨이 시작함
+ - resol4_ipad_open: 이 장면부터 레벨이 시작함. 클릭하면
+ - resol4_ipad_app: 이거 나옴... 아래로 가는 화살표 누르고
  - resol4_main: 여기서 문으로 탈출!	// 측면: resol4_side
 
 #아이패드 전체 추가(끝!) --> 14:20
