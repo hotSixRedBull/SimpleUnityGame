@@ -7,6 +7,7 @@ public class touch_open : MonoBehaviour
 {
     public Image targetImage;
     public Sprite appImageFour; //바뀌어질 이미지
+    float time;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,19 @@ public class touch_open : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Inventory.resolution == 4 && Inventory.blinkCountFour < 5) {
+            if(time < 0.5f) {
+                targetImage.color = new Color(1, 1, 1, 1 - time);
+            } else {
+                targetImage.color = new Color(1, 1, 1, time);
+                if(time > 1f) {
+                    time = 0;
+                    Inventory.blinkCountFour = Inventory.blinkCountFour + 1;
+                }
+            }
+
+            time += Time.deltaTime;
+        }
     }
 
     public void touchOpen() {

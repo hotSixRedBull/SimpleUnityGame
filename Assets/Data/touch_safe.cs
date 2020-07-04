@@ -9,6 +9,7 @@ public class touch_safe : MonoBehaviour
     public Sprite toOpen; //바뀌어질 이미지
     public Sprite getFlashlight; //바뀌어질 이미지
     public Sprite toEmpty; //바뀌어질 이미지
+    float time;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,19 @@ public class touch_safe : MonoBehaviour
     void Update()
     {
         statusCheck();
+        if(Inventory.resolution == 2 && Inventory.blinkCountTwo < 5) {
+            if(time < 0.5f) {
+                targetImage.color = new Color(1, 1, 1, 1 - time);
+            } else {
+                targetImage.color = new Color(1, 1, 1, time);
+                if(time > 1f) {
+                    time = 0;
+                    Inventory.blinkCountTwo = Inventory.blinkCountTwo + 1;
+                }
+            }
+
+            time += Time.deltaTime;
+        }
     }
 
     public void statusCheck() {

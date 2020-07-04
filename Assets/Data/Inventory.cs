@@ -8,6 +8,10 @@
     public static bool sawTheWindow = false;
     public static bool sofaItem = false;
     public static bool chairItem = false;
+    public static int blinkCountTwo = 0;
+    public static int blinkCountThree = 0;
+    public static int blinkCountFour = 0;
+    public static int blinkCountFive = 0;
     /*
         0: 빈 상태
         1: 녹색 하나 주음
