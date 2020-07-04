@@ -70,4 +70,33 @@
     - 픽셀룸과 같음. 
     - 인벤에서 세모, 네모 블럭을 하나씩 금고에 합체하는 것
 
+
+#그림설명
+[resol1]
+ - resol1_main: 첫 화면		/ resol1_side: 첫 화면의 측면
+ - resol1_sofa_first: 네모 줍기 전 소파	/ resol1_sofa_later: 네모 주은 뒤 소파
+ - resol1_chair_first: 네모 줍기 전 소파	/ resol1_chair_later: 네모 주은 뒤 소파
+ - resol1_inven#: 0은 빈 인벤, 1은 하나 차있을 때, 2는 둘 다 차있을 때
+ - resol1_gumgo_first: 금고 / second: 네모 하나 넣었을 때	  /  last: 네모 다 넣었을 때(이때 1초 후 렙업)
+ - resol1_square: 네모인데 혹시 필요할까봐
+[resol2]
+ - resol2_gumgo_full: 이 장면부터 레벨이 시작함
+ - resol2_gumgo_ipad: 손전등 줍고(이때 인벤에 추가해야 함)
+ - resol2_gumgo_empty: 아이패드까지 다 주워서 빈 금고일 때
+ - resol2_main: 정면샷		/ resol2_side: 첫 화면의 측면(아직 못함)
+ - resol2_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
+[resol3]
+ - resol3_main: 정면샷		/ resol3_side: 첫 화면의 측면(아직 못함)
+ - resol3_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
+[resol2~3]
+ - flash_off: 인벤에서 후레시 클릭 시
+ - flash_on: 인벤에서 후레시 클릭+후레시 기능 키면(클릭) --> 이대로 인벤에 저장부탁
+ - ipad_pw0: 인벤에서 아이패드 클릭 시 이 화면 나옴
+ - ipad_pw1: 비번 하나 누를 때 ~~~ 4까지 감
+ - ipad_app_first: 비번 다 풀면 이 화면 나옴 --> 앱 클릭하면
+ - ipad_open_fisrt: 앱 클릭하면 이 화면 나오고 잠깐 뒤 다음 화면(ipad_open_last)으로 넘어감
+[resol4: 탈출 직전]
+ - ipad_app_last: 이 장면부터 레벨이 시작함
+ - resol4_main: 여기서 문으로 탈출!	// 측면 안만듦
+
 #아이패드 전체 추가(끝!) --> 14:20
