@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; //Text, Image 등의UI관련 변수 등을 사용할수 있게됩니다
+using UnityEngine.SceneManagement;
 
 public class Inventory_change : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class Inventory_change : MonoBehaviour
     public Image slot2; //기존에 존제하는 이미지
     public Sprite empty; //바뀌어질 이미지
     public Sprite square; //바뀌어질 이미지
-    public Sprite flashlight; //바뀌어질 이미지
+    public Sprite flashlightOff; //바뀌어질 이미지
+    public Sprite flashlightOn; //바뀌어질 이미지
     public Sprite ipad; //바뀌어질 이미지
 
     public void touch() {
@@ -75,14 +77,20 @@ public class Inventory_change : MonoBehaviour
                 slot2.sprite = empty;
                 break;
             case 7:
-                if(myName == "slot1") {
-                    Inventory.status = 4;
-                    slot1.sprite = empty;
-                    slot2.sprite = empty;
-                }
-                if(myName == "slot2") {
-                    slot1.sprite = flashlight;
-                    slot2.sprite = ipad;
+                if(Inventory.flashlightPower == true) {
+                    slot1.sprite = flashlightOn;
+                    if(myName == "slot1") {
+                        //이동
+                        SceneManager.LoadScene("flashlight");
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("flashlight"));
+                    }
+                } else {
+                    slot1.sprite = flashlightOff;
+                    if(myName == "slot1") {
+                        //이동
+                        SceneManager.LoadScene("flashlight");
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("flashlight"));
+                    }
                 }
                 break;
         }
@@ -124,7 +132,7 @@ public class Inventory_change : MonoBehaviour
                 slot2.sprite = empty;
                 break;
             case 5:
-                slot1.sprite = flashlight;
+                slot1.sprite = flashlightOff;
                 slot2.sprite = empty;
                 break;
             case 6:
@@ -132,7 +140,11 @@ public class Inventory_change : MonoBehaviour
                 slot2.sprite = empty;
                 break;
             case 7:
-                slot1.sprite = flashlight;
+                if(Inventory.flashlightPower == true) {
+                    slot1.sprite = flashlightOn;
+                } else {
+                    slot1.sprite = flashlightOff;
+                }
                 slot2.sprite = ipad;
                 break;
         }

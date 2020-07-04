@@ -269,7 +269,8 @@ MonoBehaviour:
   slot2: {fileID: 1521382230}
   empty: {fileID: 21300000, guid: 8fa6d5b0eab9bd542bbd8fcf84403fd9, type: 3}
   square: {fileID: 21300000, guid: d40b1475afdc4cd47bfb5228c6965bf9, type: 3}
-  flashlight: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOff: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOn: {fileID: 21300000, guid: 4feb31ba198305c48bcbfb71a44c3e2b, type: 3}
   ipad: {fileID: 21300000, guid: bca038016feeaf44b8fe0b444652441c, type: 3}
 --- !u!1 &96858032
 GameObject:
@@ -1246,7 +1247,8 @@ MonoBehaviour:
   slot2: {fileID: 1521382230}
   empty: {fileID: 21300000, guid: 8fa6d5b0eab9bd542bbd8fcf84403fd9, type: 3}
   square: {fileID: 21300000, guid: d40b1475afdc4cd47bfb5228c6965bf9, type: 3}
-  flashlight: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOff: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOn: {fileID: 21300000, guid: 4feb31ba198305c48bcbfb71a44c3e2b, type: 3}
   ipad: {fileID: 21300000, guid: bca038016feeaf44b8fe0b444652441c, type: 3}
 --- !u!114 &1363122397
 MonoBehaviour:

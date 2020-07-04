@@ -17,7 +17,7 @@ public class touch_flashlight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void touchFlashLight() {
@@ -25,9 +25,11 @@ public class touch_flashlight : MonoBehaviour
         Debug.Log("Inventory.flashlightPower");
         Debug.Log(Inventory.flashlightPower);
         if(Inventory.flashlightPower == true) {
-            targetImage.sprite = OnImage;
-        } else if(Inventory.status == 5) {
+            Inventory.flashlightPower = false;
             targetImage.sprite = OffImage;
+        } else if(Inventory.status == 5) {
+            Inventory.flashlightPower = true;
+            targetImage.sprite = OnImage;
         }
     }
 }

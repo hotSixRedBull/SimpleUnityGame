@@ -611,7 +611,8 @@ MonoBehaviour:
   slot2: {fileID: 1249524101}
   empty: {fileID: 21300000, guid: 8fa6d5b0eab9bd542bbd8fcf84403fd9, type: 3}
   square: {fileID: 21300000, guid: d40b1475afdc4cd47bfb5228c6965bf9, type: 3}
-  flashlight: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOff: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOn: {fileID: 21300000, guid: 4feb31ba198305c48bcbfb71a44c3e2b, type: 3}
   ipad: {fileID: 21300000, guid: bca038016feeaf44b8fe0b444652441c, type: 3}
 --- !u!1 &1047861275
 GameObject:
@@ -1214,7 +1215,8 @@ MonoBehaviour:
   slot2: {fileID: 1249524101}
   empty: {fileID: 21300000, guid: 8fa6d5b0eab9bd542bbd8fcf84403fd9, type: 3}
   square: {fileID: 21300000, guid: d40b1475afdc4cd47bfb5228c6965bf9, type: 3}
-  flashlight: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOff: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  flashlightOn: {fileID: 21300000, guid: 4feb31ba198305c48bcbfb71a44c3e2b, type: 3}
   ipad: {fileID: 21300000, guid: bca038016feeaf44b8fe0b444652441c, type: 3}
 --- !u!114 &1483763284
 MonoBehaviour:
@@ -1259,12 +1261,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1483763281}
-        m_MethodName: 
+      - m_Target: {fileID: 1483763283}
+        m_MethodName: touch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
