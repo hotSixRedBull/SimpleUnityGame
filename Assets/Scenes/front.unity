@@ -605,13 +605,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a9cf70b9d0841468df07184410306c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentScene: front
   myName: slot2
   slot1: {fileID: 2131879171}
   slot2: {fileID: 1249524101}
   empty: {fileID: 21300000, guid: 8fa6d5b0eab9bd542bbd8fcf84403fd9, type: 3}
   square: {fileID: 21300000, guid: d40b1475afdc4cd47bfb5228c6965bf9, type: 3}
-  flashlight: {fileID: 21300000, guid: 7b8dca6d661153c46a74a599a8a3ef39, type: 3}
-  ipad: {fileID: 21300000, guid: 1293d7982ba59b74890572143359e474, type: 3}
+  flashlight: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  ipad: {fileID: 21300000, guid: bca038016feeaf44b8fe0b444652441c, type: 3}
 --- !u!1 &1047861275
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.9, y: -178.44}
+  m_AnchoredPosition: {x: -37, y: -115.69}
   m_SizeDelta: {x: 375.31317, y: 174.11574}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047861277
@@ -1048,7 +1049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -314, y: -60.007}
+  m_AnchoredPosition: {x: -312.2, y: 0.0000038147}
   m_SizeDelta: {x: 47.609253, y: 62.75051}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359913332
@@ -1168,6 +1169,7 @@ GameObject:
   - component: {fileID: 1483763286}
   - component: {fileID: 1483763285}
   - component: {fileID: 1483763284}
+  - component: {fileID: 1483763283}
   m_Layer: 5
   m_Name: slot1Button
   m_TagString: Untagged
@@ -1194,6 +1196,26 @@ RectTransform:
   m_AnchoredPosition: {x: -291.04, y: 209.4}
   m_SizeDelta: {x: 89.91696, y: 85.196785}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1483763283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483763281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a9cf70b9d0841468df07184410306c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: front
+  myName: slot1
+  slot1: {fileID: 2131879171}
+  slot2: {fileID: 1249524101}
+  empty: {fileID: 21300000, guid: 8fa6d5b0eab9bd542bbd8fcf84403fd9, type: 3}
+  square: {fileID: 21300000, guid: d40b1475afdc4cd47bfb5228c6965bf9, type: 3}
+  flashlight: {fileID: 21300000, guid: f55cb6ce357d53b43aae6e6e608a3182, type: 3}
+  ipad: {fileID: 21300000, guid: bca038016feeaf44b8fe0b444652441c, type: 3}
 --- !u!114 &1483763284
 MonoBehaviour:
   m_ObjectHideFlags: 0

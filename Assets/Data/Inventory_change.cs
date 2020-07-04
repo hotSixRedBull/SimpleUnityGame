@@ -5,6 +5,7 @@ using UnityEngine.UI; //Text, Image 등의UI관련 변수 등을 사용할수 �
 
 public class Inventory_change : MonoBehaviour
 {
+    public string currentScene;
     public string myName;
     public Image slot1; //기존에 존제하는 이미지
     public Image slot2; //기존에 존제하는 이미지
@@ -14,18 +15,45 @@ public class Inventory_change : MonoBehaviour
     public Sprite ipad; //바뀌어질 이미지
 
     public void touch() {
+        Debug.Log("touched Inventory");
+        Debug.Log("Inventory.status");
+        Debug.Log(Inventory.status);
         switch(Inventory.status) {
             case 1:
-                Inventory.status = 0;
+                if(currentScene != "safe"){
+                    break;
+                }
+                Debug.Log("Inventory.spent");
+                Debug.Log(Inventory.spent);
+                Inventory.spent = Inventory.spent + 1;
+                Debug.Log("Inventory.spent");
+                Debug.Log(Inventory.spent);
+                if(Inventory.spent >= 2) {
+                    Inventory.status = 4;
+                } else {
+                    Inventory.status = 0;
+                }
                 slot1.sprite = empty;
                 slot2.sprite = empty;
                 break;
             case 2:
+                if(currentScene != "safe"){
+                    break;
+                }
+                Inventory.spent = Inventory.spent + 1;
+                Debug.Log("Inventory.spent raised");
+                Debug.Log(Inventory.spent);
                 Inventory.status = 1;
                 slot1.sprite = empty;
                 slot2.sprite = empty;
                 break;
             case 3:
+                if(currentScene != "safe"){
+                    break;
+                }
+                Inventory.spent = Inventory.spent + 1;
+                Debug.Log("Inventory.spent raised");
+                Debug.Log(Inventory.spent);
                 Inventory.status = 1;
                 slot1.sprite = square;
                 slot2.sprite = empty;
@@ -35,7 +63,10 @@ public class Inventory_change : MonoBehaviour
                 slot2.sprite = empty;
                 break;
             case 5:
-                Inventory.status = 3;
+                if(currentScene != "window"){
+                    break;
+                }
+                Inventory.status = 4;
                 slot1.sprite = empty;
                 slot2.sprite = empty;
                 break;
@@ -45,7 +76,7 @@ public class Inventory_change : MonoBehaviour
                 break;
             case 7:
                 if(myName == "slot1") {
-                    Inventory.status = 3;
+                    Inventory.status = 4;
                     slot1.sprite = empty;
                     slot2.sprite = empty;
                 }

@@ -10,6 +10,7 @@ public class ImageChange : MonoBehaviour
  
     public void ChangeImage()
     {
+        Debug.Log("ChangeImage");
         fromImage.sprite = toImage; //TestImage에 SourceImage를 TestSprite에 존제하는 이미지로 바꾸어줍니다
     }
     // Start is called before the first frame update
