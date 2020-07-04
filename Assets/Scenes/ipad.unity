@@ -1642,6 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 1995905460}
+  openImageFour: {fileID: 21300000, guid: 3b7c7f91dca1e4541a39a27cfc8207cb, type: 3}
   appImageFour: {fileID: 21300000, guid: 134513868dec8194d84bda68ed421cc3, type: 3}
 --- !u!114 &2140411418
 MonoBehaviour:

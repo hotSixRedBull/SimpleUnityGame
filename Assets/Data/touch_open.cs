@@ -6,6 +6,7 @@ using UnityEngine.UI; //Text, Image 등의UI관련 변수 등을 사용할수 �
 public class touch_open : MonoBehaviour
 {
     public Image targetImage;
+    public Sprite openImageFour; //바뀌어질 이미지
     public Sprite appImageFour; //바뀌어질 이미지
     float time;
     // Start is called before the first frame update
@@ -39,9 +40,14 @@ public class touch_open : MonoBehaviour
         Debug.Log("Inventory.resolution");
         Debug.Log(Inventory.resolution);
         if(Inventory.ipadStep == 4 && Inventory.resolution == 3) {
-            targetImage.sprite = appImageFour;
+            targetImage.sprite = openImageFour;
             if(Inventory.resolution <= 4) {
                 Inventory.resolution = 4;
+            }
+        } else if(Inventory.ipadStep == 4 && Inventory.resolution == 4) {
+            targetImage.sprite = appImageFour;
+            if(Inventory.resolution <= 5) {
+                Inventory.resolution = 5;
             }
         }
     }
