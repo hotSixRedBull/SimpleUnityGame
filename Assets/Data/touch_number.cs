@@ -27,18 +27,21 @@ public class touch_number : MonoBehaviour
 
     public void touchNumber() {
         Debug.Log("touchNumber");
-        if(Inventory.ipadStep == 0 && value == 2) {
-            Inventory.ipadStep = 1;
-            targetImage.sprite = stepOne;
-        } else if(Inventory.ipadStep == 1 && value == 0) {
-            Inventory.ipadStep = 2;
-            targetImage.sprite = stepTwo;
-        } else if(Inventory.ipadStep == 2 && value == 2) {
-            Inventory.ipadStep = 3;
-            targetImage.sprite = stepThree;
-        } else if(Inventory.ipadStep == 3 && value == 0) {
-            Inventory.ipadStep = 4;
-            targetImage.sprite = stepApp;
+        if(Inventory.sawTheWindow == true) {
+            if(Inventory.ipadStep == 0 && value == 2) {
+                Inventory.ipadStep = 1;
+                targetImage.sprite = stepOne;
+            } else if(Inventory.ipadStep == 1 && value == 0) {
+                Inventory.ipadStep = 2;
+                targetImage.sprite = stepTwo;
+            } else if(Inventory.ipadStep == 2 && value == 2) {
+                Inventory.ipadStep = 3;
+                targetImage.sprite = stepThree;
+            } else if(Inventory.ipadStep == 3 && value == 0) {
+                Inventory.ipadStep = 4;
+                Inventory.resolution = 4;
+                targetImage.sprite = stepApp;
+            }
         }
     }
 }

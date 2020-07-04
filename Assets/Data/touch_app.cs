@@ -21,11 +21,13 @@ public class touch_app : MonoBehaviour
     }
 
     public void touchApp() {
+        Debug.Log("touchNumber");
         if(Inventory.ipadStep == 4 && Inventory.resolution == 3) {
             targetImage.sprite = toImage;
             Inventory.resolution = 4;
         } else if(Inventory.ipadStep == 4 && Inventory.resolution == 4) {
             targetImage.sprite = toOpenApp;
+            Inventory.resolution = 5;
         }
     }
 }

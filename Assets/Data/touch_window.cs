@@ -23,6 +23,7 @@ public class touch_window : MonoBehaviour
         Debug.Log("touchWindow");
         if(Inventory.flashlightPower == true) {
             targetImage.sprite = toOpen;
+            Inventory.sawTheWindow = true;
             //해상도 올려
         }
     }

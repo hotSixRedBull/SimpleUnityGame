@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/window.unity
     guid: 4d0aa3bf0d259c54f831bcbfdcbdc527
+  - enabled: 1
+    path: Assets/Scenes/ipad.unity
+    guid: c6b362b5cef39cc4180aa0d76079eb5a
   m_configObjects: {}

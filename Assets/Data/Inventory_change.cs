@@ -83,6 +83,9 @@ public class Inventory_change : MonoBehaviour
                         //이동
                         SceneManager.LoadScene("flashlight");
                         SceneManager.SetActiveScene(SceneManager.GetSceneByName("flashlight"));
+                    } else if(Inventory.sawTheWindow == true) {
+                        SceneManager.LoadScene("ipad");
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("ipad"));
                     }
                 } else {
                     slot1.sprite = flashlightOff;

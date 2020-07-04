@@ -5,6 +5,7 @@
     public static bool flashlightPower = false;
     public static int resolution = 1;
     public static int ipadStep = 0;
+    public static bool sawTheWindow = false;
     /*
         0: 빈 상태
         1: 녹색 하나 주음
