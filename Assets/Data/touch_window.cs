@@ -25,6 +25,9 @@ public class touch_window : MonoBehaviour
             targetImage.sprite = toOpen;
             Inventory.sawTheWindow = true;
             //해상도 올려
+            if(Inventory.resolution <= 3) {
+                Inventory.resolution = 3;
+            }
         }
     }
 }
