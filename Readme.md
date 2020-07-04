@@ -79,6 +79,7 @@
  - resol1_inven#: 0은 빈 인벤, 1은 하나 차있을 때, 2는 둘 다 차있을 때
  - resol1_gumgo_first: 금고 / second: 네모 하나 넣었을 때	  /  last: 네모 다 넣었을 때(이때 1초 후 렙업)
  - resol1_square: 네모인데 혹시 필요할까봐
+ 
 [resol2]
  - resol2_gumgo_full: 이 장면부터 레벨이 시작함
  - resol2_gumgo_ipad: 손전등 줍고 --> resol2_flash_inven을 인벤에 추가
@@ -90,6 +91,7 @@
  - resol2_flash_on_inven: 불켜진 손전등 인벤토리 추가
  - resol2_window_first: 창문 확대
  - resol2_window_last: 창문에 불켜진 손전등 비출 때	// 마지막 장면
+ 
 [resol3]
  - resol3_main: 정면샷		/ resol3_side: 측면
  - resol3_sofa_closed: 소파 근접샷(혹시 누를때를 대비)
@@ -97,9 +99,8 @@
  - resol3_ipad_pw1: 비번 하나 누를 때 ~~~ 4까지 감	// 비번은 2020
  - resol3_ipad_app: 비번 다 풀면 이 화면 나옴 --> 앱 클릭하면
  - resol3_ipad_open: 앱 클릭하면 이 화면 나오고 잠깐 뒤 렙업!!
+ 
 [resol4: 탈출 직전]
  - resol4_ipad_open: 이 장면부터 레벨이 시작함. 클릭하면
  - resol4_ipad_app: 이거 나옴... 아래로 가는 화살표 누르고
  - resol4_main: 여기서 문으로 탈출!	// 측면: resol4_side
-
-#아이패드 전체 추가(끝!) --> 14:20
