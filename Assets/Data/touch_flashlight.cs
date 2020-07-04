@@ -27,7 +27,7 @@ public class touch_flashlight : MonoBehaviour
         if(Inventory.flashlightPower == true) {
             Inventory.flashlightPower = false;
             targetImage.sprite = OffImage;
-        } else if(Inventory.status == 5) {
+        } else {
             Inventory.flashlightPower = true;
             targetImage.sprite = OnImage;
         }
