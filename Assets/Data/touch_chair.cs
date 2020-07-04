@@ -16,12 +16,14 @@ public class touch_chair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        statusCheck();
+        if(Inventory.resolution == 1) {
+            statusCheck();
+        }
     }
     
     public void statusCheck() {
         if(Inventory.status >= 2) {
-            targetImage.sprite = toImage; //TestImage에 SourceImage를 TestSprite에 존제하는 이미지로 바꾸어줍니다
+            targetImage.sprite = toImage; //TestImage에 SourceImage를 TestSprite에 존재하는 이미지로 바꾸어줍니다
         }
     }
 

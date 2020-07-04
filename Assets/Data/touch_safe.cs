@@ -37,12 +37,12 @@ public class touch_safe : MonoBehaviour
 
     public void statusCheck() {
         if(Inventory.status == 4) {
-            targetImage.sprite = toOpen; //TestImage에 SourceImage를 TestSprite에 존제하는 이미지로 바꾸어줍니다
+            targetImage.sprite = toOpen; //TestImage에 SourceImage를 TestSprite에 존재하는 이미지로 바꾸어줍니다
             if(Inventory.resolution <= 2) {
                 Inventory.resolution = 2;
             }
         } else if(Inventory.status == 5) {
-            targetImage.sprite = getFlashlight; //TestImage에 SourceImage를 TestSprite에 존제하는 이미지로 바꾸어줍니다
+            targetImage.sprite = getFlashlight; //TestImage에 SourceImage를 TestSprite에 존재하는 이미지로 바꾸어줍니다
         } else if(Inventory.status == 7) {
             targetImage.sprite = toEmpty;
         }

@@ -16,7 +16,9 @@ public class touch_sofa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        statusCheck();
+        if(Inventory.resolution == 1) {
+            statusCheck();
+        }
     }
     
     public void statusCheck() {

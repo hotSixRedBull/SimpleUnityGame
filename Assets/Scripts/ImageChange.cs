@@ -5,13 +5,13 @@ using UnityEngine.UI; //Text, Image 등의UI관련 변수 등을 사용할수 �
 
 public class ImageChange : MonoBehaviour
 {
-    public Image fromImage; //기존에 존제하는 이미지
+    public Image fromImage; //기존에 존재하는 이미지
     public Sprite toImage; //바뀌어질 이미지
  
     public void ChangeImage()
     {
         Debug.Log("ChangeImage");
-        fromImage.sprite = toImage; //TestImage에 SourceImage를 TestSprite에 존제하는 이미지로 바꾸어줍니다
+        fromImage.sprite = toImage; //TestImage에 SourceImage를 TestSprite에 존재하는 이미지로 바꾸어줍니다
     }
     // Start is called before the first frame update
     void Start()

@@ -8,8 +8,8 @@ public class Inventory_change : MonoBehaviour
 {
     public string currentScene;
     public string myName;
-    public Image slot1; //기존에 존제하는 이미지
-    public Image slot2; //기존에 존제하는 이미지
+    public Image slot1; //기존에 존재하는 이미지
+    public Image slot2; //기존에 존재하는 이미지
     public Sprite empty; //바뀌어질 이미지
     public Sprite square; //바뀌어질 이미지
     public Sprite flashlightOff; //바뀌어질 이미지
