@@ -39,7 +39,6 @@ public class touch_number : MonoBehaviour
                 targetImage.sprite = stepThree;
             } else if(Inventory.ipadStep == 3 && value == 0) {
                 Inventory.ipadStep = 4;
-                Inventory.resolution = 4;
                 targetImage.sprite = stepApp;
             }
         }
