@@ -90,6 +90,9 @@ public class Inventory_change : MonoBehaviour
                         //이동
                         SceneManager.LoadScene("flashlight");
                         SceneManager.SetActiveScene(SceneManager.GetSceneByName("flashlight"));
+                    } else {
+                        SceneManager.LoadScene("ipad");
+                        SceneManager.SetActiveScene(SceneManager.GetSceneByName("ipad"));
                     }
                 }
                 break;
