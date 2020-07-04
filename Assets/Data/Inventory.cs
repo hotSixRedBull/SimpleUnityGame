@@ -2,6 +2,7 @@
 {
     public static int status = 0;
     public static int spent = 0;
+    public static bool flashlightPower = false;
     /*
         0: 빈 상태
         1: 녹색 하나 주음
